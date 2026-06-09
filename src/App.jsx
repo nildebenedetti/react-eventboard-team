@@ -30,9 +30,9 @@ function App() {
       {/* e la card da far girare con la lista eventi*/}
       <EventCard />
 
-      <ul>
+      <ul className="list-unstyled">
         {visibleEvents.map((event) => (
-          <li key={event.id}>{event.title}</li>
+          <li key={event.id}><EventCard event /></li>
         ))}
       </ul>
     </main>
