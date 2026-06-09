@@ -1,8 +1,10 @@
 import EventCard from "./components/EventCard";
 
 function App() {
-    <EventCard/>
- return;
+
+    return <>
+        <EventCard />
+    </>;
 }
 
 export default App
