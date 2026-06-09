@@ -5,8 +5,12 @@ function App() {
     const changeHandler = (event) => {
         setFilter(event.target.value);
     };
-    return (
-        <div>
+    return ( <>
+        <header>
+            
+        </header>
+        <main>
+             <div>
             <p value={filter} onChange={changeHandler}>FIltra per Categoria:</p>
             <select class="form-select" aria-label="Default select example">
                 <option value="tutti">Tutti</option>
@@ -15,7 +19,14 @@ function App() {
                 <option value="meetup">Meetup</option>
             </select>
         </div>
-    )
-};
+        </main>
+        <footer>
+            
+        </footer>
+    </>     
+    )};
+
+   
+}
 
 export default App;
