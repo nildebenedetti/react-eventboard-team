@@ -1,6 +1,7 @@
-
 import { useState } from "react"
 import { events } from "./data/events";
+import EventCard from "./components/EventCard";
+
 
 function App() {
     const [filter, setFilter] = useState('Tutti');
@@ -26,6 +27,8 @@ function App() {
         <p>Eventi trovati: {visibleCount}</p>
 
           {/*lista eventi*/}
+          {/* e la card da far girare con la lista eventi*/}
+        <EventCard/>
 
       <ul>
         {visibleEvents.map((event) => (
@@ -38,9 +41,7 @@ function App() {
         </footer>
     </>     
     )};
-
    
-
 }
 
 export default App;
