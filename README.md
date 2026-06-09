@@ -1,33 +1,16 @@
-# Esercizio Github Collaborativo
+# React + Vite
 
-Creiamo una piccola app frontend con Vite + React chiamata EventBoard, utile per ripassare componenti, props, gestione dei dati e lavoro collaborativo su GitHub.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Leggete bene il file ISSUES.md e se siete stati cosi fortunati da non incorrere in conflitti, provate a generarne voi 😂 
+Currently, two official plugins are available:
 
-Il file contiene le issue da creare su GitHub per l'esercizio di gruppo.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-L'obiettivo è lavorare su un repo condiviso utilizzando:
-issue
-branch collegati alle issue
-commit e push
-pull request
-merge su main
-risoluzione dei conflitti
+## React Compiler
 
-Indicazioni generali
-Ogni issue deve essere assegnata a una sola persona.
-Ogni issue deve avere il suo branch dedicato.
-Il branch va creato direttamente da GitHub partendo dall'issue.
-Ogni studente deve lavorare solo sul proprio branch.
-Quando il lavoro è pronto bisogna aprire una Pull Request verso main.
-Alcune issue sono state pensate per modificare gli stessi file e generare volutamente conflitti.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Obiettivo finale
-Alla fine dell'esercizio ogni gruppo deve avere:
-un repo condiviso funzionante
-issue assegnate correttamente
-branch creati dalle issue
-almeno una Pull Request completata senza conflitti
-almeno una Pull Request risolta con conflitto reale
-merge finale su main
-branch non più necessari eliminati sia da GitHub che in locale
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
