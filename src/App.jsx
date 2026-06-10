@@ -1,46 +1,28 @@
 import { useState } from "react"
 import { events } from "./data/events";
 import EventCard from "./components/EventCard";
+import EventList from "./components/EventList";
 
 
 function App() {
-  const [filter, setFilter] = useState('Tutti');
-  const changeHandler = (event) => {
-    setFilter(event.target.value);
-  };
-  const visibleEvents = events;
-  const visibleCount = visibleEvents.length;
-  return (<>
-    <header>
+    const [filter, setFilter] = useState('Tutti');
+    const changeHandler = (event) => {
+        setFilter(event.target.value);
+    };
+    const visibleEvents = events;
+    const visibleCount = visibleEvents.length;
+    return (<>
+        <header>
+            <h1 class="head-title">EVENT BOARD</h1><br/><h6 class="head-stitle">Il sito degli eventi c:</h6>
+        </header>
+        <main>
+            <EventList />
+        </main>
+        <footer>
 
-    </header>
-    <main>
-      <div>
-        <p value={filter} onChange={changeHandler}>FIltra per Categoria:</p>
-        <select class="form-select" aria-label="Default select example">
-          <option value="tutti">Tutti</option>
-          <option value="conferenze">Conferenze</option>
-          <option value="workshop">Workshop</option>
-          <option value="meetup">Meetup</option>
-        </select>
-      </div>
-      <p>Eventi trovati: {visibleCount}</p>
-
-      {/*lista eventi*/}
-      {/* e la card da far girare con la lista eventi*/}
-      <EventCard />
-
-      <ul>
-        {visibleEvents.map((event) => (
-          <li key={event.id}>{event.title}</li>
-        ))}
-      </ul>
-    </main>
-    <footer>
-
-    </footer>
-  </>
-  )
+        </footer>
+    </>
+    )
 };
-  
+
 export default App;
